@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		56E121622235061E0012D9CF /* SFUserCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 56E1215B2235061E0012D9CF /* SFUserCenter.m */; };
 		56E121632235061E0012D9CF /* SFUserCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56E121612235061E0012D9CF /* SFUserCenterViewController.m */; };
+		56E12192223538B70012D9CF /* Server.plist in Resources */ = {isa = PBXBuildFile; fileRef = 56E1218B223538B70012D9CF /* Server.plist */; };
+		56E12193223538B70012D9CF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 56E1218D223538B70012D9CF /* Localizable.strings */; };
+		56E12194223538B70012D9CF /* WX20190227-205248@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 56E12191223538B70012D9CF /* WX20190227-205248@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,6 +33,10 @@
 		56E121602235061E0012D9CF /* SFUserCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFUserCenterViewController.h; sourceTree = "<group>"; };
 		56E121612235061E0012D9CF /* SFUserCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFUserCenterViewController.m; sourceTree = "<group>"; };
 		56E12168223506350012D9CF /* SFUserCenterBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SFUserCenterBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		56E1218B223538B70012D9CF /* Server.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Server.plist; sourceTree = "<group>"; };
+		56E1218E223538B70012D9CF /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		56E1218F223538B70012D9CF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		56E12191223538B70012D9CF /* WX20190227-205248@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WX20190227-205248@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,8 +121,43 @@
 		56E12169223506350012D9CF /* SFUserCenterBundle */ = {
 			isa = PBXGroup;
 			children = (
+				56E12189223538B70012D9CF /* master */,
 			);
 			path = SFUserCenterBundle;
+			sourceTree = "<group>";
+		};
+		56E12189223538B70012D9CF /* master */ = {
+			isa = PBXGroup;
+			children = (
+				56E1218A223538B70012D9CF /* Config */,
+				56E1218C223538B70012D9CF /* Localized */,
+				56E12190223538B70012D9CF /* Image */,
+			);
+			path = master;
+			sourceTree = "<group>";
+		};
+		56E1218A223538B70012D9CF /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				56E1218B223538B70012D9CF /* Server.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		56E1218C223538B70012D9CF /* Localized */ = {
+			isa = PBXGroup;
+			children = (
+				56E1218D223538B70012D9CF /* Localizable.strings */,
+			);
+			path = Localized;
+			sourceTree = "<group>";
+		};
+		56E12190223538B70012D9CF /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				56E12191223538B70012D9CF /* WX20190227-205248@2x.png */,
+			);
+			path = Image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,6 +220,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				"zh-Hans",
 			);
 			mainGroup = 563AD47E222B878B00C482C7;
 			productRefGroup = 563AD488222B878B00C482C7 /* Products */;
@@ -195,6 +238,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56E12192223538B70012D9CF /* Server.plist in Resources */,
+				56E12193223538B70012D9CF /* Localizable.strings in Resources */,
+				56E12194223538B70012D9CF /* WX20190227-205248@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +264,18 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		56E1218D223538B70012D9CF /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				56E1218E223538B70012D9CF /* zh-Hans */,
+				56E1218F223538B70012D9CF /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		563AD48E222B878B00C482C7 /* Debug */ = {

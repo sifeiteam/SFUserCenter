@@ -94,7 +94,7 @@ Pod::Spec.new do |s|
   s.source_files  = "#{s.name}/**/*.{h,m}"
   # s.exclude_files = "Classes/Exclude"
 
-  s.public_header_files = "#{s.name}/**/*.h"
+  s.public_header_files = "#{s.name}/inc/**/*.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -109,7 +109,7 @@ Pod::Spec.new do |s|
   # s.resources = "Resources/*.png"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
-
+  s.resource_bundles = { "#{s.name}Bundle" => ["#{s.name}Bundle/*"] }
 
   # ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #

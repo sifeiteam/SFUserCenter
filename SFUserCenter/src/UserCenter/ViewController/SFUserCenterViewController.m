@@ -7,6 +7,8 @@
 //
 
 #import "SFUserCenterViewController.h"
+#import <SFComponent/SFLanguage.h>
+#import "SFUserCenter.h"
 
 @interface SFUserCenterViewController ()
 
@@ -17,6 +19,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor redColor];
+    
+    self.navigationItem.title = [SFLanguage localizedStringWithKey:@"Title" componentName:[SFUserCenter componentName]];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     

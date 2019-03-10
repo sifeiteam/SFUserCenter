@@ -9,22 +9,22 @@
 #import "SFUserCenter.h"
 #import "SFUserCenterViewController.h"
 #import <SFComponent/SFInjection.h>
+#import <SFComponent/SFLanguage.h>
+#import <SFComponent/SFImages.h>
 
 @implementation SFUserCenter
 
 #define k_Page_SFUserCenterViewController @"Page_SFUserCenterViewController"
 
-+ (BOOL)startupWhenAppLaunched {
-    //希望注入到tabbar，所以APP运行后就启动
-    return YES;
-}
-
 - (void)didFinishStartup {
     //将个人中心注入到tabbar
+    NSString * componentName = [SFUserCenter componentName];
     NSDictionary *params = @{
-                             @"componentName" : [SFUserCenter componentName],
+                             @"componentName" : componentName,
                              @"page" : k_Page_SFUserCenterViewController,
-                             @"context" : @{}
+                             @"context" : @{},
+                             @"tabTitle" : [SFLanguage localizedStringWithKey:@"TabTitle" componentName:componentName],
+                             @"tabImage" : [SFImages imageWithName:@"WX20190227-205248.png" componentName:componentName]
                              };
     [[SFInjection sharedInstance] injectWithIdentifier:@"Injection_SFTab"
                                                 params:params];

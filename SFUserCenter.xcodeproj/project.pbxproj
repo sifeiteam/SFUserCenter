@@ -7,8 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		560147BB2239410300F3CEFF /* SFUserCenterViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5601479F2239410300F3CEFF /* SFUserCenterViewModel.m */; };
+		560147BC2239410300F3CEFF /* SFUserCenterCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 560147A42239410300F3CEFF /* SFUserCenterCellViewModel.m */; };
+		560147BD2239410300F3CEFF /* SFUserCenterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 560147A82239410300F3CEFF /* SFUserCenterModel.m */; };
+		560147BE2239410300F3CEFF /* SFUserCenterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 560147AA2239410300F3CEFF /* SFUserCenterCell.m */; };
+		560147BF2239410300F3CEFF /* SFUserHeaderCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 560147B02239410300F3CEFF /* SFUserHeaderCellViewModel.m */; };
+		560147C02239410300F3CEFF /* SFUserHeaderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 560147B22239410300F3CEFF /* SFUserHeaderModel.m */; };
+		560147C12239410300F3CEFF /* SFUserHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 560147B62239410300F3CEFF /* SFUserHeaderCell.m */; };
+		560147C22239410300F3CEFF /* SFUserCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 560147BA2239410300F3CEFF /* SFUserCenterViewController.m */; };
+		560147C62239412300F3CEFF /* SFUserCenterService.m in Sources */ = {isa = PBXBuildFile; fileRef = 560147C52239412300F3CEFF /* SFUserCenterService.m */; };
+		560147C92239413C00F3CEFF /* SFUserCenterCellService.m in Sources */ = {isa = PBXBuildFile; fileRef = 560147C82239413C00F3CEFF /* SFUserCenterCellService.m */; };
+		560147CC2239414E00F3CEFF /* SFUserHeaderCellService.m in Sources */ = {isa = PBXBuildFile; fileRef = 560147CB2239414E00F3CEFF /* SFUserHeaderCellService.m */; };
 		56E121622235061E0012D9CF /* SFUserCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 56E1215B2235061E0012D9CF /* SFUserCenter.m */; };
-		56E121632235061E0012D9CF /* SFUserCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56E121612235061E0012D9CF /* SFUserCenterViewController.m */; };
 		56E12192223538B70012D9CF /* Server.plist in Resources */ = {isa = PBXBuildFile; fileRef = 56E1218B223538B70012D9CF /* Server.plist */; };
 		56E12193223538B70012D9CF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 56E1218D223538B70012D9CF /* Localizable.strings */; };
 /* End PBXBuildFile section */
@@ -26,11 +36,31 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5601479F2239410300F3CEFF /* SFUserCenterViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFUserCenterViewModel.m; sourceTree = "<group>"; };
+		560147A02239410300F3CEFF /* SFUserCenterViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFUserCenterViewModel.h; sourceTree = "<group>"; };
+		560147A42239410300F3CEFF /* SFUserCenterCellViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFUserCenterCellViewModel.m; sourceTree = "<group>"; };
+		560147A52239410300F3CEFF /* SFUserCenterCellViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFUserCenterCellViewModel.h; sourceTree = "<group>"; };
+		560147A72239410300F3CEFF /* SFUserCenterModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFUserCenterModel.h; sourceTree = "<group>"; };
+		560147A82239410300F3CEFF /* SFUserCenterModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFUserCenterModel.m; sourceTree = "<group>"; };
+		560147AA2239410300F3CEFF /* SFUserCenterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFUserCenterCell.m; sourceTree = "<group>"; };
+		560147AB2239410300F3CEFF /* SFUserCenterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFUserCenterCell.h; sourceTree = "<group>"; };
+		560147AF2239410300F3CEFF /* SFUserHeaderCellViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFUserHeaderCellViewModel.h; sourceTree = "<group>"; };
+		560147B02239410300F3CEFF /* SFUserHeaderCellViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFUserHeaderCellViewModel.m; sourceTree = "<group>"; };
+		560147B22239410300F3CEFF /* SFUserHeaderModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFUserHeaderModel.m; sourceTree = "<group>"; };
+		560147B32239410300F3CEFF /* SFUserHeaderModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFUserHeaderModel.h; sourceTree = "<group>"; };
+		560147B52239410300F3CEFF /* SFUserHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFUserHeaderCell.h; sourceTree = "<group>"; };
+		560147B62239410300F3CEFF /* SFUserHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFUserHeaderCell.m; sourceTree = "<group>"; };
+		560147B92239410300F3CEFF /* SFUserCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFUserCenterViewController.h; sourceTree = "<group>"; };
+		560147BA2239410300F3CEFF /* SFUserCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFUserCenterViewController.m; sourceTree = "<group>"; };
+		560147C42239412300F3CEFF /* SFUserCenterService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFUserCenterService.h; sourceTree = "<group>"; };
+		560147C52239412300F3CEFF /* SFUserCenterService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFUserCenterService.m; sourceTree = "<group>"; };
+		560147C72239413C00F3CEFF /* SFUserCenterCellService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFUserCenterCellService.h; sourceTree = "<group>"; };
+		560147C82239413C00F3CEFF /* SFUserCenterCellService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFUserCenterCellService.m; sourceTree = "<group>"; };
+		560147CA2239414E00F3CEFF /* SFUserHeaderCellService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFUserHeaderCellService.h; sourceTree = "<group>"; };
+		560147CB2239414E00F3CEFF /* SFUserHeaderCellService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFUserHeaderCellService.m; sourceTree = "<group>"; };
 		563AD487222B878B00C482C7 /* libSFUserCenter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSFUserCenter.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		56E1215B2235061E0012D9CF /* SFUserCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFUserCenter.m; sourceTree = "<group>"; };
 		56E1215C2235061E0012D9CF /* SFUserCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFUserCenter.h; sourceTree = "<group>"; };
-		56E121602235061E0012D9CF /* SFUserCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFUserCenterViewController.h; sourceTree = "<group>"; };
-		56E121612235061E0012D9CF /* SFUserCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFUserCenterViewController.m; sourceTree = "<group>"; };
 		56E12168223506350012D9CF /* SFUserCenterBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SFUserCenterBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		56E1218B223538B70012D9CF /* Server.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Server.plist; sourceTree = "<group>"; };
 		56E1218E223538B70012D9CF /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
@@ -55,6 +85,147 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5601479D2239410300F3CEFF /* UserCenter */ = {
+			isa = PBXGroup;
+			children = (
+				560147C32239411100F3CEFF /* Service */,
+				5601479E2239410300F3CEFF /* ViewModel */,
+				560147A12239410300F3CEFF /* Cell */,
+				560147B82239410300F3CEFF /* ViewController */,
+			);
+			path = UserCenter;
+			sourceTree = "<group>";
+		};
+		5601479E2239410300F3CEFF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5601479F2239410300F3CEFF /* SFUserCenterViewModel.m */,
+				560147A02239410300F3CEFF /* SFUserCenterViewModel.h */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		560147A12239410300F3CEFF /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				560147A22239410300F3CEFF /* SFUserCenterCell */,
+				560147AD2239410300F3CEFF /* SFUserHeaderCell */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		560147A22239410300F3CEFF /* SFUserCenterCell */ = {
+			isa = PBXGroup;
+			children = (
+				560147A32239410300F3CEFF /* ViewModel */,
+				560147A62239410300F3CEFF /* Model */,
+				560147A92239410300F3CEFF /* View */,
+				560147AC2239410300F3CEFF /* Service */,
+			);
+			path = SFUserCenterCell;
+			sourceTree = "<group>";
+		};
+		560147A32239410300F3CEFF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				560147A42239410300F3CEFF /* SFUserCenterCellViewModel.m */,
+				560147A52239410300F3CEFF /* SFUserCenterCellViewModel.h */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		560147A62239410300F3CEFF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				560147A72239410300F3CEFF /* SFUserCenterModel.h */,
+				560147A82239410300F3CEFF /* SFUserCenterModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		560147A92239410300F3CEFF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				560147AA2239410300F3CEFF /* SFUserCenterCell.m */,
+				560147AB2239410300F3CEFF /* SFUserCenterCell.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		560147AC2239410300F3CEFF /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				560147C72239413C00F3CEFF /* SFUserCenterCellService.h */,
+				560147C82239413C00F3CEFF /* SFUserCenterCellService.m */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		560147AD2239410300F3CEFF /* SFUserHeaderCell */ = {
+			isa = PBXGroup;
+			children = (
+				560147AE2239410300F3CEFF /* ViewModel */,
+				560147B12239410300F3CEFF /* Model */,
+				560147B42239410300F3CEFF /* View */,
+				560147B72239410300F3CEFF /* Service */,
+			);
+			path = SFUserHeaderCell;
+			sourceTree = "<group>";
+		};
+		560147AE2239410300F3CEFF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				560147AF2239410300F3CEFF /* SFUserHeaderCellViewModel.h */,
+				560147B02239410300F3CEFF /* SFUserHeaderCellViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		560147B12239410300F3CEFF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				560147B22239410300F3CEFF /* SFUserHeaderModel.m */,
+				560147B32239410300F3CEFF /* SFUserHeaderModel.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		560147B42239410300F3CEFF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				560147B52239410300F3CEFF /* SFUserHeaderCell.h */,
+				560147B62239410300F3CEFF /* SFUserHeaderCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		560147B72239410300F3CEFF /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				560147CA2239414E00F3CEFF /* SFUserHeaderCellService.h */,
+				560147CB2239414E00F3CEFF /* SFUserHeaderCellService.m */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		560147B82239410300F3CEFF /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				560147B92239410300F3CEFF /* SFUserCenterViewController.h */,
+				560147BA2239410300F3CEFF /* SFUserCenterViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		560147C32239411100F3CEFF /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				560147C42239412300F3CEFF /* SFUserCenterService.h */,
+				560147C52239412300F3CEFF /* SFUserCenterService.m */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		563AD47E222B878B00C482C7 = {
 			isa = PBXGroup;
 			children = (
@@ -94,26 +265,9 @@
 		56E1215D2235061E0012D9CF /* src */ = {
 			isa = PBXGroup;
 			children = (
-				56E1215E2235061E0012D9CF /* UserCenter */,
+				5601479D2239410300F3CEFF /* UserCenter */,
 			);
 			path = src;
-			sourceTree = "<group>";
-		};
-		56E1215E2235061E0012D9CF /* UserCenter */ = {
-			isa = PBXGroup;
-			children = (
-				56E1215F2235061E0012D9CF /* ViewController */,
-			);
-			path = UserCenter;
-			sourceTree = "<group>";
-		};
-		56E1215F2235061E0012D9CF /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				56E121602235061E0012D9CF /* SFUserCenterViewController.h */,
-				56E121612235061E0012D9CF /* SFUserCenterViewController.m */,
-			);
-			path = ViewController;
 			sourceTree = "<group>";
 		};
 		56E12169223506350012D9CF /* SFUserCenterBundle */ = {
@@ -247,8 +401,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				560147BE2239410300F3CEFF /* SFUserCenterCell.m in Sources */,
+				560147BD2239410300F3CEFF /* SFUserCenterModel.m in Sources */,
+				560147BC2239410300F3CEFF /* SFUserCenterCellViewModel.m in Sources */,
 				56E121622235061E0012D9CF /* SFUserCenter.m in Sources */,
-				56E121632235061E0012D9CF /* SFUserCenterViewController.m in Sources */,
+				560147C62239412300F3CEFF /* SFUserCenterService.m in Sources */,
+				560147C92239413C00F3CEFF /* SFUserCenterCellService.m in Sources */,
+				560147CC2239414E00F3CEFF /* SFUserHeaderCellService.m in Sources */,
+				560147BB2239410300F3CEFF /* SFUserCenterViewModel.m in Sources */,
+				560147C22239410300F3CEFF /* SFUserCenterViewController.m in Sources */,
+				560147C02239410300F3CEFF /* SFUserHeaderModel.m in Sources */,
+				560147C12239410300F3CEFF /* SFUserHeaderCell.m in Sources */,
+				560147BF2239410300F3CEFF /* SFUserHeaderCellViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

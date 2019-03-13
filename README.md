@@ -2,14 +2,11 @@
 
 个人中心
 
-
-
 ### 组件名
 
 SFUserCenter
 
-
-调用[[SFInjection sharedInstance] injectWithIdentifier: params:];注入行
+调用[[SFInjection sharedInstance] injectWithIdentifier: params:];向个人中心注入行
 
 - **identifier：** Injection_SFUserCenter
 
@@ -21,13 +18,13 @@ SFUserCenter
 
   - **componentName：** 接收事件的组件名
 
-  - **eventName：** 事件名，个人中心点击时行时触发该事件，由componentName对应的组件进行接收并处理
+  - **eventName：** 事件名，个人中心点击行时触发该事件，由componentName对应的组件进行接收并处理
 
 ```
 NSString *componentName = @"SFComponentA";
 NSDictionary *params = @{
-    @"icon" : iconImage,
-    @"title" : [SFLanguage localizedStringWithKey:@"title" componentName:componentName],
+    @"icon" : iconImage,
+    @"title" : [SFLanguage localizedStringWithKey:@"title" componentName:componentName],
     @"componentName" : componentName,
     @"eventName" : k_Event_SFComponentA_UserCenter
 };
@@ -40,17 +37,9 @@ NSDictionary *params = @{
 - (id)responseEvent:(NSString *)eventName context:(NSDictionary *)context {
     if ([eventName isEqualToString:k_Event_SFComponentA_UserCenter]) {
         UIViewController *viewController = [context objectForKey:@"SFUserCenterViewController"];
-        
+
         //处理
     }
     return nil;
 }
 ```
-
-
-
-
-
-
-
-
